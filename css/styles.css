@@ -179,8 +179,8 @@ h2 {
 .wrapper .card__blurb {
   grid-area: blurb;
   margin: 0 auto;
-  padding: 40px 0 0 0;
-  width: 87%;
+  padding: 40px 7.5% 0;
+  width: 100%;
 }
 .wrapper .card__blurb h1 {
   color: #2ab2af;
@@ -192,7 +192,7 @@ h2 {
 .wrapper .card__blurb p {
   color: #98a6bd;
   line-height: 1.6rem;
-  margin: 15px 0 0 0;
+  margin: 15px 0 30px 0;
 }
 .wrapper .card__cta {
   background: #2ab2af;
@@ -234,6 +234,7 @@ h2 {
   font-size: 0.9rem;
   font-weight: 700;
   height: 45px;
+  margin-bottom: 20px;
   outline: none;
   padding-top: 5px;
   width: 98%;
@@ -252,6 +253,32 @@ h2 {
 }
 .wrapper .card__why ul li {
   margin-bottom: 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .wrapper {
+    padding: 5% 0;
+  }
+  .wrapper .card {
+    width: 90%;
+    height: 100%;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: "blurb" "cta" "why";
+  }
+  .wrapper .card__blurb h2 {
+    line-height: 1.4rem;
+  }
+  .wrapper .card__blurb p {
+    font-size: 0.9rem;
+  }
+  .wrapper .card__cta {
+    border-radius: 0;
+  }
+  .wrapper .card__why {
+    border-radius: 0 0 8px 8px;
+    padding-bottom: 10px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
