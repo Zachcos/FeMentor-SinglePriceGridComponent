@@ -141,4 +141,32 @@ body {
   font-size: 16px;
 }
 
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background: #e5eff5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .card {
+  background: white;
+  border-radius: 6px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "blurb blurb" "cta why";
+  height: 475px;
+  width: 44%;
+}
+.wrapper .card__blurb {
+  grid-area: blurb;
+}
+.wrapper .card__cta {
+  grid-area: cta;
+}
+.wrapper .card__why {
+  grid-area: why;
+}
+
 /*# sourceMappingURL=styles.css.map */
